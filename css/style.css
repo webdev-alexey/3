@@ -1,0 +1,99 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 1195px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  background-image: url("../images/bg.jpg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.header {
+  padding-top: 34px;
+  padding-left: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 166px;
+}
+
+.menu__list {
+  display: flex;
+}
+
+.menu__list-item {
+  margin-left: 30px;
+}
+
+.menu__list-item:first-child {
+  margin-left: 0;
+}
+
+.menu__list-item a {
+  font-size: 24px;
+  line-height: 28px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  transition: all 0.3s;
+}
+
+.menu__list-item a:hover {
+  color: #fdd486;
+}
+
+.slider__item {
+  text-align: center;
+  color: #fff;
+}
+
+.slider__title {
+  font-size: 96px;
+  line-height: 112px;
+  font-weight: 700;
+}
+
+.slider__text {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+.slick-dots {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.slick-dots li + li {
+  margin-left: 15px;
+}
+
+.slick-dots button {
+  border: none;
+  font-size: 0;
+  padding: 0;
+  width: 25px;
+  height: 25px;
+  background: #7a3d1c;
+  border: 2px solid #fdd486;
+  border-radius: 50%;
+}
+
+.slick-active button {
+  background: #fdd486;
+  border: 2px solid #fdd486;
+}
